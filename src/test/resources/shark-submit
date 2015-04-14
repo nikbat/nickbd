@@ -1,0 +1,18 @@
+./spark-submit --class com.nick.learningspark.WordCount8 /tmp/nickbd-jar-with-dependencies.jar
+./spark-submit --class com.nick.learningspark.BasicLoadSequenceFile8 /tmp/nickbd-jar-with-dependencies.jar
+
+
+
+./spark-submit \
+  --class com.nick.learningspark.BasicLoadSequenceFile8 \
+  --master spark://nick-prime:7077 \
+  --deploy-mode cluster \
+  /tmp/nickbd-jar-with-dependencies.jar \
+  100
+
+
+./spark-submit \
+  --class com.nick.learningspark.BasicLoadSequenceFile8 \
+  --master spark://nick-prime:7077 \
+  /tmp/nickbd-jar-with-dependencies.jar \
+  100
