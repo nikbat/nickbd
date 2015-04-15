@@ -21,7 +21,7 @@ import org.apache.spark.sql.SQLContext;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.DataFrame;
 
-public class LoadJsonWithSparkSQL {
+public class LoadJsonWithSparkSQLOld {
 
 
   public static void main(String[] args) throws Exception {
